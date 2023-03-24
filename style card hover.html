@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+    font-family: 'poopins', sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    nin height: 100vh;
+    background: #pink
+    overflow:hidden;
+}
+
+
+.card{
+      position: relative;
+      widht:350px;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.5s;
+      transition-delay:0.5s;
+
+      
+}
+card:hover{
+    width: 600px;
+    transition-delay: 0.5s;
+
+}
+
+card.circle{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.card .circle::before{
+      content:":
+      position:absolute;
+
+      top:30;
+      left:2;
+      right:2;
+      width:470px;
+      height: 470px;
+      border-radius:50%;
+      border:8px solid lightblue;
+
+      filter:drop-shadow(0 0 10px lightblue) feDropShadow(0 0 60 lightblue);
+      transition-delay:0.755 15;
+
+
+.card:hover.circle: :befor{
+    transition-delay:0.5s;
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+    background:blue;
+}
+
+.card .circle.book{
+    position: relative;
+    width:100%;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+.card:hover .circle.book{
+    transform:(0)
+    transition-delay:0s;
+}
+
+.card.openbook{
+    position:absolute;
+    top: 50%;
+    left:30%;
+    height: 300px;
+    transform: translate(-50%, -50%)  scale(0) rotate(315deg); 
+    transition: 0.5s ease-in-out;
+
+}
+
+.card:hover .openbook{
+    transition-delay: 0.75s;
+    top:55%;
+    left:82%;
+
+    
+}height:320px;
+transform: translate(-50%, -50%)  scale(0) rotate(15deg); 
+}
+
+
+.card.content{
+  position:relativr;
+  widht:60%;
+
+  left:10%;
+  padding: 20px 20px 20px 20px;
+
+  opacity:0;
+  transition:0.5s;
+  visiblity:hidden;
+ }
+
+ .card:hover.content{
+    transition-delay:0.75s;
+    opacity:1;
+    visibility:visible;
+    left:3px;
+    margin-top:15px;
+
+ }
+
+.card.content h2{
+   color:#fff;
+   text-transform: 1.3en;
+   font-size: 2en;
+   line-height: 1.3en;
+
+} 
+
+.card.content p{
+color:#fff;
+
+}
+
+.card.content a{
+    position: relative;
+    color: #fff;
+    background: #pink;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display:inline-block;
+     text decoration:none;
+     font-weight:bold;
+     nargin-top:15px
+}
